@@ -11,6 +11,7 @@ const app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
+
 //挂载全局的拦截器
 app.use(requireAuth);
 app.use(logger('dev'));
